@@ -1,0 +1,9 @@
+{
+    "typescript.check.workspaceVersion": false,
+    "files.exclude": {
+        "node_modules/": true,
+        "app/**/*.js": true,
+        "app/**/*.map": true
+    },
+    "window.zoomLevel": 0
+}
