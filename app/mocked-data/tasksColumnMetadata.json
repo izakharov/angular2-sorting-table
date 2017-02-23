@@ -1,0 +1,26 @@
+[{
+    "title": "Task name",
+    "name": "taskName",
+    "desc": false
+  },
+  {
+    "title": "Priority",
+    "name": "priority",
+    "desc": false
+  },
+  {
+    "title": "Number of story points",
+    "name": "storyPoints",
+    "desc": false
+  },
+  {
+    "title": "Created By",
+    "name": "createdBy",
+    "desc": false
+  },
+  {
+    "title": "Created date",
+    "name": "createdDate",
+    "desc": false
+  }
+]

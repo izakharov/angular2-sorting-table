@@ -1,0 +1,36 @@
+<ng-container *ngIf="isTasksLoaded">
+  <div class="container">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <input [(ngModel)]="searchTasksFilter" type="text" class="form-control" placeholder="Search in tasks" aria-describedby="basic-addon1">
+    </div>
+    <table class="table table-hover table-striped table-sortable">
+      <thead>
+        <tr>
+          <th *ngFor="let column of columns" [class]="chosenColumn(column.name)" (click)="changeSorting(column)">
+            {{column.title}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks  | mpOrderBy: applyOrderBy() | mpSearchFilter: [searchTasksFilter, ['createdDate']]">
+          <td>
+            {{task.taskName}}
+          </td>
+          <td>
+            {{task.priority}}
+          </td>
+          <td>
+            {{task.storyPoints}}
+          </td>
+          <td>
+            {{task.createdBy}}
+          </td>
+          <td>
+            {{task.createdDate | date:'medium'}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-container>

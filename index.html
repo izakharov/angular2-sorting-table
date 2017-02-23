@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <title>Angular 2 test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico?v=1" type="image/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous" />
+      <!-- IE required polyfills, in this exact order -->
+      <script src="node_modules/core-js/client/shim.min.js"></script>
+      <script src="node_modules/zone.js/dist/zone.js"></script>
+      <script src="node_modules/systemjs/dist/system.src.js"></script>
+      <script>
+        System.import('system-config.js').then(function () {
+          System.import('main');
+        }).catch(console.error.bind(console));
+
+      </script>
+</head>
+
+<body>
+  <mp-main-page>Loading...</mp-main-page>
+</body>
+
+</html>

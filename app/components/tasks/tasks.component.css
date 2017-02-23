@@ -1,0 +1,27 @@
+.table-sortable>thead>tr>th {
+  cursor: pointer;
+  position: relative;
+  background-image: none;
+}
+
+.table-sortable>thead>tr>th:after,
+.table-sortable>thead>tr>th.desc-false:after,
+.table-sortable>thead>tr>th.desc-true:after {
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+.table-sortable>thead>tr>th:after {
+  content: "\f0dc";
+  color: lightgrey;
+}
+
+.table-sortable>thead>tr>th.desc-false:after {
+  content: "\f0de";
+  color: black;
+}
+
+.table-sortable>thead>tr>th.desc-true:after {
+  content: "\f0dd";
+  color: black;
+}
